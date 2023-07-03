@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="list">
+        <button class="delete">Удалить</button>
+        <button class="done">Решено</button>
+        <h1 class="list__h1">To do list</h1>
+        <p class="list__subtext">Начни свой день правильно!</p>
+        <div class="list__box">
+            <div class="list__items">
+                <!-- <fieldset class="list__content" draggable="true">
+                    <legend class="list__date">14:00</legend>
+                    <label class="label"><input type="checkbox" name="html" value="html" class="input" > HTML</label><br />
+                </fieldset> -->
+            </div>
+            <div class="list__done"></div>
+            <div class="addTask">
+                <button class="list__btn">+</button>
+                <h2 class="list__h2">Добавить задачу</h2>
+            </div>
+        </div>
+    </div>
+    <div class="task hidden">
+        <h1 class="task__h1">Опишите задачу</h1>
+        <form>
+            <label for="taskName">Задача</label><br>
+            <textarea id="taskName" name="taskName" maxlength="29"></textarea><br>
+            <label for="taskDate">Дата и время</label><br>
+            <input type="time" id="taskDate" name="taskDate"><br>
+            <input type="submit" value="Добавить" id="save">
+            <input type="reset" id="reset">
+          </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js" integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

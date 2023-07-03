@@ -1,0 +1,196 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: pink;
+    width: 100vw;
+    height: 100vh;
+}
+
+.ghost {
+    opacity: .4;
+}
+
+.list{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 800px;
+    height: 800px;
+    background: #fff;
+    position: relative
+}
+.list__h1{
+    text-align: center;
+    font-size: 40px;
+    color: #8b008b;
+    padding-top: 25px;
+}
+.list__subtext{
+    text-align: center;
+    font-size: 22px;
+    color: #8b008b;
+    margin-bottom: 25px;
+}
+.list__box{
+    border: 5px solid pink;
+    width: 80%;
+    height: 75%;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: auto;
+}
+.list__btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 45px;;
+    border: 3px solid #8b008b;
+    color: #8b008b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+/* .list__items{
+    
+} */
+.list__content{
+    margin: 0 auto;
+    width: 575px;
+    height: 90px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.list__date{
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.list__h2{
+    color: #8b008b;
+    font-size: 22px;
+}
+.label{
+    font-size: 25px;
+}
+.input{
+    width: 20px;
+    height: 1.2em;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.task{
+    width: 500px;
+    height: 500px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid pink;
+    margin: 0 auto;
+    position: absolute;
+    top: 27%;
+    left: 35%;
+}
+.task__h1{
+    margin-bottom: 10px;
+    color:#8b008b;
+}
+#taskName{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 400px;
+    height: 100px;
+    font-size: 19px;
+    color: #8b008b;
+    border: 2px solid black;
+    resize: none;
+}
+
+#taskDate{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 95px;
+    height: 30px;
+    font-size: 19px;
+    color: #8b008b;
+    border: 2px solid #8b008b;
+}
+#save{
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+}
+#reset{
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+}
+.hidden{
+    display: none;
+}
+.close{
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+}
+.close:before,
+.close:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    width: 26px;
+    height: 4px;
+    background: #8b008b;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+.addTask{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    margin-left: 30px;
+}
+.priority{
+    border: 3px solid red;
+}
+.error{
+    color: red;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.delete{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    border-radius: 5px;
+    border:2px solid#8b008b;
+    color: #8b008b;
+    font-size: 15px;
+}
+.done{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    border-radius: 5px;
+    border:2px solid#8b008b;
+    color: #8b008b;
+    font-size: 15px;
+}
+.over{
+    border: 3px dotted #666;
+}
